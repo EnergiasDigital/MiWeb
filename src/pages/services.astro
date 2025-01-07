@@ -1,0 +1,317 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const weak_currents = [
+  {
+    title: "Chapas Eléctricas",
+    description:
+      "Instalación de chapas eléctricas para la apertura de puertas interior y exterior.",
+  },
+  {
+    title: "Portón Automático",
+    description:
+      "Automatización de Portones para el acceso vehicular a tu propiedad. Brazos hidráulicos y motores eléctricos.",
+  },
+  {
+    title: "Sistemas Anti Incendio",
+    description:
+      "Diseño e instalación de sistemas de detección y extinción de incendios.",
+  },
+  {
+    title: "Citofonía",
+    description:
+      "Sistemas de comunicación interna y externa para edificios, condominios y particulares.",
+  },
+  {
+    title: "Porteros y Videoporteros",
+    description:
+      "Instalación de porteros y videoporteros para la comunicación con visitas.",
+  },
+  {
+    title: "Retenedor Magnético",
+    description: "Sistema de retención magnética para puertas.",
+  },
+];
+
+const electronic_security = [
+  {
+    title: "Sistemas CCTV",
+    description:
+      "Circuito cerrado de televisión para la vigilancia de espacios.",
+  },
+  {
+    title: "Alarma Comunitaria",
+    description:
+      "Instalación de alarmas comunitarias para la seguridad de vecinos y hogares.",
+  },
+  {
+    title: "Sensores de Movimiento",
+    description: "Sensores de movimiento para la detección de intrusos.",
+  },
+  {
+    title: "Sensores Magnéticos",
+    description:
+      "Sistemas de seguridad con sensores magnéticos para puertas y ventanas.",
+  },
+  {
+    title: "Rayos Lineales Infrarrojos",
+    description: "Define un perímetro de seguridad con rayos infrarrojos.",
+  },
+  {
+    title: "Cercos Eléctricos",
+    description:
+      "Instalación de cercos eléctricos para la protección de tu propiedad, edificios o comunidades.",
+  },
+  {
+    title: "Control de Acceso",
+    description:
+      "Sistemas de control de acceso para la gestión de entradas y salidas con chips o tarjetas.",
+  },
+];
+
+const telecommunications = [
+  {
+    title: "Rit Alámbrica Coaxial ",
+    description:
+      "Instalación de redes de cableado coaxial para la transmisión de datos alámbrica.",
+  },
+  {
+    title: "Rit Inalámbrica Coaxial ",
+    description:
+      "Instalación de redes de cableado coaxial para la transmisión de datos inalámbrica.",
+  },
+  {
+    title: "Rit de Fibra Óptica",
+    description:
+      "Instalación de redes de fibra óptica para la transmisión de datos de alta velocidad.",
+  },
+  {
+    title: "Redes Inalámbricas",
+    description:
+      "Instalación de redes inalámbricas para la transmisión de datos sin cables.",
+  },
+  {
+    title: "Redes de Datos",
+    description:
+      "Diseño e instalación de redes de datos para la transmisión de información en tu hogar o empresa.",
+  },
+];
+---
+
+<Layout title="Servicios" description="">
+  <div class="mt-20">
+    <!-- Hero Section -->
+    <style>
+      /* Clip-path personalizado */
+      .clip-l {
+        clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+      }
+    </style>
+    <section class="bg-yellow-300 text-center py-20 clip-l">
+      <div class="max-w-screen-xl mx-auto">
+        <h1 class="text-4xl font-black">Nuestros Servicios</h1>
+        <p class="mt-4 text-xl">
+          Descubre cómo transformamos tus necesidades con soluciones innovadoras
+          en Energía Digital, seguridad electrónica, telecomunicaciones y
+          corrientes débiles.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Corrientes Débiles Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-semibold">Corrientes Débiles</h2>
+      <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+      <p class="mt-4 text-xl text-gray-600">
+        Soluciones avanzadas para optimizar y automatizar tus instalaciones
+        mediante sistemas de corrientes débiles.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      {
+        weak_currents.map((item) => (
+          <div class="relative bg-white p-6 rounded-lg shadow-lg group overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-yellow-50 to-red-50">
+              <svg
+                class="absolute top-10 -right-36 w-full h-full"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <defs>
+                  <linearGradient
+                    id="grad1"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style="stop-color:#fef08a;stop-opacity:1"
+                    />
+                    <stop
+                      offset="100%"
+                      style="stop-color:#fca5a5;stop-opacity:1"
+                    />
+                  </linearGradient>
+                </defs>
+                <path
+                  stroke="url(#grad1)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+                />
+                <path
+                  stroke="url(#grad1)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 relative z-10">
+              {item.title}
+            </h3>
+            <p class="mt-2 text-gray-600 relative z-10">{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Seguridad Electrónica Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-semibold">Seguridad Electrónica</h2>
+        <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+        <p class="mt-4 text-xl text-gray-600">
+          Tecnología avanzada para proteger tu propiedad e instalaciones de
+          manera eficiente.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        {
+          electronic_security.map((item) => (
+            <div class="relative bg-white p-6 rounded-lg shadow-lg group overflow-hidden">
+              <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-yellow-50 to-red-50">
+                <svg
+                  class="absolute top-10 -right-36 w-full h-full"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <defs>
+                    <linearGradient
+                      id="grad1"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style="stop-color:#fef08a;stop-opacity:1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color:#fca5a5;stop-opacity:1"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    stroke="url(#grad1)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 12a28.076 28.076 0 0 1-1.091 9M7.231 4.37a8.994 8.994 0 0 1 12.88 3.73M2.958 15S3 14.577 3 12a8.949 8.949 0 0 1 1.735-5.307m12.84 3.088A5.98 5.98 0 0 1 18 12a30 30 0 0 1-.464 6.232M6 12a6 6 0 0 1 9.352-4.974M4 21a5.964 5.964 0 0 1 1.01-3.328 5.15 5.15 0 0 0 .786-1.926m8.66 2.486a13.96 13.96 0 0 1-.962 2.683M7.5 19.336C9 17.092 9 14.845 9 12a3 3 0 1 1 6 0c0 .749 0 1.521-.031 2.311M12 12c0 3 0 6-2 9"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 relative z-10">
+                {item.title}
+              </h3>
+              <p class="mt-2 text-gray-600 relative z-10">{item.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Telecomunicaciones Section -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-semibold">Telecomunicaciones</h2>
+        <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 mx-auto" />
+        <p class="mt-4 text-xl text-gray-600">
+          Instalación de sistemas de cableado y redes de alta calidad para
+          garantizar tu conectividad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        {
+          telecommunications.map((item) => (
+            <div class="relative bg-white p-6 rounded-lg shadow-lg group overflow-hidden">
+              <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-yellow-50 to-red-50">
+                <svg
+                  class="absolute top-10 -right-36 w-full h-full"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <defs>
+                    <linearGradient
+                      id="grad1"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style="stop-color:#fef08a;stop-opacity:1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color:#fca5a5;stop-opacity:1"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    stroke="url(#grad1)"
+                    fill="url(#grad1)"
+                    fill-rule="evenodd"
+                    d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 relative z-10">
+                {item.title}
+              </h3>
+              <p class="mt-2 text-gray-600 relative z-10">{item.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

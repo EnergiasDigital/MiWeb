@@ -1,0 +1,94 @@
+---
+const images = [
+  {
+    src: "/camara-de-seguridad-tipo-domo.webp",
+    alt: "Cámara de seguridad tipo domo IP de alta resolución para vigilancia 24/7",
+    title: "Cámara domo IP: Vigilancia profesional para su hogar o negocio",
+  },
+  {
+    src: "/central-de-alarma-de-incendio.webp",
+    alt: "Panel de control de alarma de incendio avanzado con detección temprana de humo y calor",
+    title:
+      "Central de alarma: Protección contra incendios confiable y eficiente",
+  },
+  {
+    src: "/fuente-de-poder.webp",
+    alt: "Fuente de alimentación industrial de alta eficiencia para sistemas electrónicos",
+    title: "Fuente de poder: Energía confiable para sus equipos",
+  },
+  {
+    src: "/mantencion-de-rayos-lineales.webp",
+    alt: "Técnico especializado realizando mantenimiento preventivo de sistema de rayos lineales",
+    title:
+      "Mantenimiento de equipos de seguridad: Servicio técnico profesional",
+  },
+  {
+    src: "/trabajador-cortando-fierro.webp",
+    alt: "Soldador industrial cortando metal con equipo de protección personal",
+    title: "Servicios de soldadura: Trabajos de alta calidad y precisión",
+  },
+  {
+    src: "/trabajador-feliz.webp",
+    alt: "Equipo de trabajo satisfecho y comprometido con sus proyectos",
+    title: "Nuestro equipo: Profesionales apasionados por su trabajo",
+  },
+  {
+    src: "/trabajador-fusionando-fibra-optica.webp",
+    alt: "Técnico instalando fibra óptica para una conexión a internet de alta velocidad",
+    title: "Instalación de fibra óptica: Conectividad rápida y confiable",
+  },
+  {
+    src: "/trabajador-marcando-codigo-de-alarmas.webp",
+    alt: "Programador configurando sistema de alarma personalizado para cliente",
+    title:
+      "Sistemas de alarma a medida: Protección personalizada para su hogar o negocio",
+  },
+];
+---
+
+<div class="">
+  <div class="max-w-screen-xl mx-auto">
+    <div
+      class="w-full inline-flex flex-nowrap overflow-hidden
+    sm:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
+    [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-30px),transparent_100%)]
+    text-gray-100 text-center
+    sm:py-12 py-8 px-6"
+    >
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll my-10 md:my-0"
+      >
+        {
+          images.map((image) => (
+            <li class="min-w-[250px] px-4">
+              <img
+                src={image.src}
+                class="h-60 rounded-xl"
+                alt={image.alt}
+                title={image.title}
+              />
+            </li>
+          ))
+        }
+      </ul>
+
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-0 [&_img]:max-w-none animate-infinite-scroll my-10 md:my-0"
+        aria-hidden="true"
+      >
+        {
+          images.map((image) => (
+            <li class="min-w-[250px] px-4">
+              <img
+                src={image.src}
+                class="h-60 rounded-xl"
+                alt={image.alt}
+                title={image.title}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>

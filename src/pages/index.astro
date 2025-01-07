@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Carousel from "../components/Carousel.astro";
+import Presentation from "../components/Presentation.astro";
+import Carousel_Projects from "../components/Carousel_Projects.astro";
+import Card_Services from "../components/Card_Services.astro";
+import Card_Projects from "../components/Card_Projects.astro";
+import Value_Proposition from "../components/Value_Proposition.astro";
+import Brands from "../components/Brands.astro";
+---
+
+<Layout
+  title="Bienvenido a Energías Digital SPA"
+  description="Instalación seguridad electrónica, telecomunicaciones y Corrientes débiles para grandes empresas, pequeñas empresas y particulares."
+>
+  <Carousel />
+
+  <main class="max-w-screen-xl mt-10 mx-auto p-4">
+    <section>
+      <Presentation />
+      <Carousel_Projects />
+    </section>
+  </main>
+
+  <section class="bg-gradient-to-b from-red-500 to-white">
+    <div class="max-w-screen-xl mx-auto px-4 pt-20">
+      <div class="pb-10">
+        <h1 class="md:text-center md:text-4xl text-3xl text-white font-bold">
+          Cotiza Nuestros Servicios
+        </h1>
+        <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto" />
+      </div>
+      <Card_Services />
+    </div>
+  </section>
+  <section class="max-w-screen-xl mx-auto px-4">
+    <p class="pt-14 text-lg text-pretty">
+      Somos <i
+        >especialistas en seguridad electrónica y proyectos de edificación.</i
+      >
+      <b>Diseñamos e instalamos sistemas</b> de alarma contra incendios, cámaras
+      de vigilancia de alta definición y redes de cableado estructurado a medida.
+      Nuestra experiencia y el uso de las últimas tecnologías nos permiten ofrecerte
+      <b>soluciones personalizadas y confiables</b>. ¡Contáctenos hoy mismo y
+      descubre cómo podemos ayudarte a proteger lo que más valoras!
+    </p>
+  </section>
+  <div class="bg-gray-50">
+    <hr class="max-w-screen-xl mx-auto px-4 mt-20" />
+    <section class="max-w-screen-xl mx-auto px-4 py-20" id="projects">
+      <div class="">
+        <div class="pb-10">
+          <h1 class="md:text-center md:text-4xl text-3xl font-bold">
+            Últimos Proyectos
+          </h1>
+          <hr
+            class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto"
+          />
+        </div>
+        <Card_Projects />
+      </div>
+    </section>
+  </div>
+  <hr class="max-w-screen-xl mx-auto px-4" />
+  <section class="max-w-screen-xl mx-auto px-4 py-20" id="about_us">
+    <div class="">
+      <Value_Proposition />
+    </div>
+  </section>
+
+  <hr class="max-w-screen-xl mx-auto px-4" />
+
+  <div class="bg-gray-50">
+    <section class="max-w-screen-xl mx-auto px-4 pt-20">
+      <div class="">
+        <div>
+          <h1
+            class="md:text-center md:text-4xl text-3xl text-gray-950 font-bold"
+          >
+            Marcas con las que trabajamos
+          </h1>
+          <hr
+            class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto"
+          />
+        </div>
+        <Brands />
+      </div>
+    </section>
+  </div>
+</Layout>

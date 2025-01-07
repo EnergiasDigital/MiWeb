@@ -1,0 +1,44 @@
+---
+import Icon_Whatsapp from "./icons/Icon_Whatsapp.astro";
+---
+
+<div
+  id="whatsappButton"
+  class="fixed bottom-0 right-0 z-50 transition-opacity duration-500"
+>
+  <div
+    class="bg-green-500 text-white rounded-t-3xl rounded-bl-3xl font-bold text-center py-2 px-4 flex mb-28 mr-24 shadow-lg animate-bounce"
+  >
+    Contactar
+  </div>
+  <div class="fixed bottom-0 right-0 mb-4 mr-4">
+    <div
+      class="bg-green-500 rounded-full w-24 h-24 items-center justify-center flex shadow-lg"
+    >
+      <a
+        href="https://api.whatsapp.com/send?phone=+56951105106&text=Hola!%20%C2%BFQue%20tal?%20He%20visto%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20uno%20de%20sus%20servicios."
+        target="_blank"
+      >
+        <Icon_Whatsapp class="text-white w-16 h-16" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener("scroll", function () {
+    var whatsappButton = document.getElementById("whatsappButton");
+
+    // Verifica si whatsappButton no es nulo
+    if (whatsappButton) {
+      var scrollPosition = window.scrollY + window.innerHeight;
+      var documentHeight = document.body.offsetHeight;
+
+      if (scrollPosition >= documentHeight) {
+        whatsappButton.classList.add("opacity-0");
+      } else {
+        whatsappButton.classList.remove("opacity-0");
+      }
+    }
+  });
+</script>

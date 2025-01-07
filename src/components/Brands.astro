@@ -1,0 +1,94 @@
+---
+const Marcas = [
+  {
+    img: "/aiphone.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/ajax.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/bosch.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/comelti.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/dahua.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/garrison.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/hikvision.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/inim.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/mircom.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/promax.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/risco.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/roger-technology.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/seagate.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/vconn.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+  {
+    img: "/western-digital.webp",
+    imgAlt: "",
+    imgTitulo: "",
+  },
+];
+---
+
+<div class="grid grid-cols-3 md:grid-cols-5 gap-4 pt-10 pb-20">
+  {
+    Marcas.map((marca) => (
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src={marca.img}
+          alt={marca.imgAlt}
+          title={marca.imgTitulo}
+        />
+      </div>
+    ))
+  }
+</div>

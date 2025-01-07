@@ -1,0 +1,163 @@
+---
+import Img_Isotipo from "./icons/Img_Isotipo.astro";
+
+const navigation = [
+  {
+    title: "Nosotros",
+    url: "/about_us",
+  },
+  {
+    title: "Servicios",
+    url: "/services",
+  },
+];
+
+const socialNetworks = [
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61561107718264&mibextid=ZbWKwL",
+    img: "/facebook.webp",
+    alt: "Logo oficial de Facebook",
+  },
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/cctvmedina?igsh=MTVubWI3OTM5aGNvZg==",
+    img: "/instagram.webp",
+    alt: "Logo oficial de Instagram",
+  },
+  {
+    title: "WhatsApp",
+    url: "https://api.whatsapp.com/send?phone=+56951105106&text=Hola!%20%C2%BFQue%20tal?%20He%20visto%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20uno%20de%20sus%20servicios.",
+    img: "/whatsapp.webp",
+    alt: "Logo oficial de WhatsApp",
+  },
+];
+
+const legal = [
+  {
+    title: "Políticas de Privacidad",
+    url: "/privacy_policies",
+  },
+  {
+    title: "Términos y condiciones",
+    url: "/terms_and_conditions",
+  },
+];
+---
+
+<footer class="bg-white">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <Img_Isotipo class="h-14" />
+          <div class="-space-y-1">
+            <span class="self-center text-xl font-black whitespace-nowrap"
+              >ENERGÍAS DIGITAL</span
+            >
+            <span
+              class="self-center text-sm text-red-500 font-black whitespace-nowrap block"
+              >SPA</span
+            >
+          </div>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Actividades
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              navigation.map((link) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={link.title}
+                    href={link.url}
+                    class="hover:underline hover:text-red-500"
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Síguenos en
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              socialNetworks.map((social) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={social.title}
+                    href={social.url}
+                    class="hover:underline hover:text-red-500"
+                    target="_blank"
+                  >
+                    {social.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+            Legal
+          </h2>
+          <ul class="text-gray-500 font-medium">
+            {
+              legal.map((legal) => (
+                <li class="mb-4">
+                  <a
+                    aria-label={legal.title}
+                    href={legal.url}
+                    class="hover:underline hover:text-red-500"
+                  >
+                    {legal.title}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center"
+        >Copyright © 2024 <a
+          href="/"
+          class="hover:underline hover:text-red-500">Energías Digital SPA</a
+        >. Creado por <a
+          href="https://fabianjara.netlify.app/"
+          class="hover:underline hover:text-red-500"
+          target="_blank">Fabian Jara</a
+        >
+      </span>
+      <div class="flex mt-4 sm:justify-center sm:mt-0">
+        {
+          socialNetworks.map((social) => (
+            <a
+              href={social.url}
+              aria-label={social.title}
+              class="text-gray-500 hover:text-gray-900 ms-5"
+              target="_blank"
+            >
+              <img
+                src={social.img}
+                class="w-4 h-4"
+                alt={social.alt}
+                title={social.title}
+              />
+              <span class="sr-only">{social.title}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</footer>

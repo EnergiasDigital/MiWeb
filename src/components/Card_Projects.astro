@@ -1,0 +1,320 @@
+---
+const Tags = {
+  weak_currents: {
+    name: "Corrientes Débiles",
+    class: "bg-black text-white",
+  },
+  electronic_security: {
+    name: "Seguridad Electrónica",
+    class: "bg-red-500 text-white",
+  },
+  telecommunications: {
+    name: "Telecomunicaciones",
+    class: "bg-yellow-300 text-black",
+  },
+};
+
+const Facilities = {
+  cctv_center: "Central CCTV",
+  fire_station: "Central de Incendio",
+  alarm_center: "Central de Alarmas Anti Robo",
+  access_control: "Control de Acceso",
+  automatic_gate: "Portones Automáticos",
+  intercom_center: "Central de Citófono Conserjería",
+  itn_wired: "Rit Alámbrica",
+  itn_wireless: "Rit Inalámbrica",
+  itn_optical_fiber: "Rit Fibra Óptica",
+};
+
+const Services = {
+  linear_ray: "Activación rayos lineales perimetrales",
+  fire_fighting_system: "Cambio de sistema anti incendio",
+  cctv: "Restablecimiento de seguridad CCTV",
+  gate_restoration: "Restauración completa de portón",
+};
+
+const Projects = [
+  {
+    title: "Edificio en Construcción",
+    description:
+      "Instalación De Corrientes débiles y seguridad electrónica  para este edificio en construcción. A lo cual se implantaron las mejora y toda las demandas solicitadas como: cámaras de seguridad, cableado y estructurado de corrientes débiles y seguridad electrónica, entre otros  ",
+    img1: "/camara-de-seguridad-y-sensor-de-humo.webp",
+    img1_alt:
+      "Sistema de seguridad doméstica con cámara y detector de humo, ofreciendo protección completa para tu hogar.",
+    img1_title: "Cámara de seguridad y detector de humo",
+    img2: "/central-citofono-de-conserjeria.webp",
+    img2_alt:
+      "Sistema de intercomunicación inteligente para edificios residenciales y comerciales",
+    img2_title: "Central de Citófono de conserjería",
+    img3: "/citofono-de-departamento-y-alarma-de-3-zonas.webp",
+    img3_alt:
+      "Citófono de departamento con alarma de 3 zonas para mayor seguridad. Ideal para aumentar la protección de tu hogar.",
+    img3_title: "Citófono de departamento y alarma de 3 zonas",
+    img4: "/control-de-acceso-con-lector-de-chip.webp",
+    img4_alt:
+      "Sistema de control de acceso con lector de chip para puertas de edificios. Solución segura y eficiente para controlar el acceso a tu propiedad.",
+    img4_title: "Sistema de control de acceso con lector de chip",
+    img5: "/monitores-con-camaras-de-seguridad.webp",
+    img5_alt:
+      "Monitores de alta resolución para sistemas de seguridad, ideales para visualizar imágenes de cámaras de vigilancia en tiempo real.",
+    img5_title: "Monitores profesionales para sistemas de seguridad",
+    img6: "/palanca-de-accion-manual-anti-incendio.webp",
+    img6_alt:
+      "Palanca de accionamiento manual para sistemas de extinción de incendios. Fácil de usar y diseñada para activar el sistema en caso de emergencia.",
+    img6_title: "Palanca de accionamiento para sistemas contra incendios",
+    tags: [Tags.weak_currents, Tags.electronic_security],
+    facilities: [
+      Facilities.cctv_center,
+      Facilities.fire_station,
+      Facilities.alarm_center,
+      Facilities.access_control,
+      Facilities.automatic_gate,
+      Facilities.intercom_center,
+    ],
+    services: [],
+  },
+  {
+    title: "Edificio en Construcción",
+    description:
+      "Este edificios se construyen bajo los más altos estándares de calidad, incluyendo una completa instalación de telecomunicaciones. Cámaras de seguridad, cableado estructurado y sistemas de control, todo diseñado para ofrecerte la mejor experiencia.",
+    img1: "/fucion-de-fibra-optica-en-mufa.webp",
+    img1_alt:
+      "Fusión de fibra óptica en una mufa. Proceso de unión de fibras ópticas para crear una conexión de alta calidad.",
+    img1_title: "Fusión de fibra óptica en mufa",
+    img2: "/camra-de-seguridad-hikivision.webp",
+    img2_alt:
+      "Cámara de seguridad Hikvision de alta resolución, ideal para vigilancia y monitoreo 24/7.",
+    img2_title: "Cámara de seguridad Hikvision",
+    img3: "/fibra-optica-y-conexion-alambrica-e-inalambrica-de-coaxial.webp",
+    img3_alt:
+      "Comparación de diferentes tipos de conexiones: fibra óptica, cable coaxial, conexión inalámbrica.",
+    img3_title: "Fibra óptica y conexión alámbrica e inalámbrica de coaxial",
+    img4: "/camara-de-seguridad-palanca-sirena-anti-incendio.webp",
+    img4_alt:
+      "Sistema de seguridad con cámara de vigilancia, palanca de accionamiento manual y sirena de alarma contra incendios.",
+    img4_title: "Sistema de seguridad con cámara, palanca y sirena",
+    tags: [
+      Tags.weak_currents,
+      Tags.electronic_security,
+      Tags.telecommunications,
+    ],
+    facilities: [
+      Facilities.alarm_center,
+      Facilities.intercom_center,
+      Facilities.cctv_center,
+      Facilities.fire_station,
+      Facilities.access_control,
+      Facilities.automatic_gate,
+      Facilities.itn_wired,
+      Facilities.itn_wireless,
+      Facilities.itn_optical_fiber,
+    ],
+    services: [],
+  },
+  {
+    title: "Manutención de Bodega",
+    description:
+      "Manutención a sistema de seguridad para bodegas de Montserrat el cual incluye puesta en marcha de aparatos nuevos y viejos, cambio completo del sistema de incendio a uno certificado por las nuevas normas chilenas, restablecimiento del sistema perimetral y cámaras de seguridad",
+    img1: "/camara-de-seguridad-ptz.webp",
+    img1_alt:
+      "Cámara de seguridad PTZ para monitoreo de alta definición con rotación panorámica y zoom óptico",
+    img1_title: "Cámara de seguridad PTZ",
+    img2: "/central-de-incendio-smartline-inim.webp",
+    img2_alt:
+      "Central de incendio SmartLine Inim con tecnología avanzada para detección y gestión de alarmas contra incendios",
+    img2_title: "Central de incendio SmartLine Inim",
+    img3: "/central-de-incendio-smartline-inim-abirta.webp",
+    img3_alt:
+      "Central de incendio SmartLine Inim abierta, diseño interno para sistemas avanzados de detección y control de incendios",
+    img3_title: "Central de incendio SmartLine Inim abierta",
+    img4: "/placa-de-central-de-alarmas.webp",
+    img4_alt:
+      "Placa de central de alarmas con circuitos integrados para sistemas de seguridad y detección",
+    img4_title: "Placa de central de alarmas",
+    img5: "/sensor-de-humo.webp",
+    img5_alt:
+      "Sensor de humo para detección temprana de incendios en sistemas de seguridad",
+    img5_title: "Sensor de humo",
+    img6: "/sensor-de-rayo-lineal-perimetral.webp",
+    img6_alt:
+      "Sensor de rayo lineal perimetral para protección y detección avanzada en seguridad exterior",
+    img6_title: "Sensor rayo lineal perimetral",
+    img7: "/teclado-de-central-de-alarmas.webp",
+    img7_alt:
+      "Teclado para central de alarmas con diseño funcional para control y configuración de sistemas de seguridad",
+    img7_title: "Teclado de central de alarma",
+    tags: [Tags.electronic_security],
+    facilities: [],
+    services: [
+      Services.cctv,
+      Services.fire_fighting_system,
+      Services.linear_ray,
+    ],
+  },
+  {
+    title: "Manutención de Edificio",
+    description:
+      "Se realizó la restauración completa de un portón dañado por impacto en un edificio, que incluyó la remoción y reemplazo de secciones de fierro doblado con nuevas piezas soldadas para garantizar la estabilidad estructural. Además, se instaló un nuevo motor de corredera junto con una estructura de soporte para asegurar su correcto funcionamiento. Finalmente, se aplicó pintura en todo el portón para protegerlo.",
+    img1: "/porton-chocado-lateral.webp",
+    img1_alt:
+      "Portón lateral dañado por choque, ideal para reparaciones y reemplazos en accesos industriales o residenciales",
+    img1_title: "Portón chocado lateral",
+    img2: "/porton-sin-motor.webp",
+    img2_alt:
+      "Portón sin motor para instalación manual en entradas residenciales e industriales",
+    img2_title: "Portón sin motor",
+    img3: "/correccion-de-fierro-doblado.webp",
+    img3_alt:
+      "Corrección de fierro doblado para reparaciones estructurales y reforzamiento de metales en construcción",
+    img3_title: "Corrección de Fierro doblado",
+    img4: "/instalacion-final-de-porton.webp",
+    img4_alt:
+      "Instalación final de portón en acceso residencial o comercial, con ajustes y aseguramiento de funcionalidad",
+    img4_title: "Instalación final de portón",
+    img5: "/alineacion-de-porton-chocado.webp",
+    img5_alt:
+      "Alineación de portón chocado para reparación y ajuste en accesos residenciales o industriales",
+    img5_title: "Alineación ded portón chocado",
+    img6: "/motor-centurion-para-porton-corredero.webp",
+    img6_alt:
+      "Motor Centurion para portón corredero, sistema de automatización para apertura eficiente y segura de accesos",
+    img6_title: "Motor Centurion para portón corredero",
+    tags: [Tags.weak_currents],
+    facilities: [],
+    services: [Services.gate_restoration],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    Projects.map((project) => {
+      const images = Object.keys(project).filter(
+        (key) =>
+          key.startsWith("img") &&
+          !key.includes("alt") &&
+          !key.includes("title")
+      );
+      return (
+        <article class="flex flex-col space-x-0 space-y-8 group lg:flex-row lg:space-x-8 lg:space-y-0 md:mx-auto lg:mx-0">
+          <div class="w-full md:w-[500px] lg:w-1/2">
+            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl lg:group-hover:-translate-y-1 lg:group-hover:shadow-2xl">
+              <div id="carousel" class="relative w-full" data-carousel="static">
+                {/* Carousel wrapper */}
+                <div class="relative overflow-hidden rounded-lg w-full h-56 z-10 sm:h-80">
+                  {images.map((imgKey, index) => (
+                    <div
+                      class={index === 0 ? "hidden" : "hidden"}
+                      duration-700
+                      ease-in-out
+                      data-carousel-item
+                    >
+                      <img
+                        src={project[imgKey]}
+                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full"
+                        alt={project[`${imgKey}_alt`] || ""}
+                        title={project[`${imgKey}_title`] || ""}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Slider controls */}
+                <button
+                  type="button"
+                  class="absolute top-0 start-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev
+                >
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg
+                      class="w-4 h-4 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  class="absolute top-0 end-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next
+                >
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg
+                      class="w-4 h-4 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="sr-only">Siguiente</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-[500px] lg:w-1/2 lg:max-w-2xl">
+            <h3 class="text-2xl font-bold">{project.title}</h3>
+            <div class="flex flex-wrap mt-2">
+              <ul class="mb-2 gap-x-2 items-center columns-2 space-y-1 gap-10 lg:columns-3">
+                {project.tags.map((tag) => (
+                  <li>
+                    <span
+                      class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                    >
+                      {tag.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div class="mt-2">{project.description}</div>
+              <div class="mt-4">
+                {project.facilities.length > 0 && (
+                  <>
+                    <h3 class="font-semibold underline text-xs">
+                      Sistema Implementado
+                    </h3>
+                    <ul class="list-disc px-7 text-xs sm:columns-2 sm:space-y-1 sm:gap-10 pt-3">
+                      {project.facilities.map((facility) => (
+                        <li>{facility}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {project.services.length > 0 && (
+                  <>
+                    <h3 class="font-semibold underline text-xs">
+                      Mantenimiento Implementado
+                    </h3>
+                    <ul class="list-disc px-7 text-xs sm:columns-2 sm:space-y-1 sm:gap-10 pt-3">
+                      {project.services.map((service) => (
+                        <li>{service}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })
+  }
+</div>
